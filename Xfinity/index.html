@@ -1,0 +1,35 @@
+<!--
+Author: Himanshi Trivedi
+App:Xfinity Mobile Code Challenge.
+Page:HomePage/index.html
+-->
+<DOCTYPE html>
+<html>
+    <head>
+        <!-- Adding required javascript and css files to the project -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css">  
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+        <script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"> </script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script> 
+        <script src="main.js"> </script>
+    </head>
+    <!--This definees application: 'mainView' and controller:'mainCtrl' in html tags.
+    It contains Div tags to define ui grid component with footer template.
+    -->
+    <body>
+        <div ng-app="mainView" class="maindiv">
+            <div ng-controller="mainCtrl">
+            <br/>
+            <!-- Adding ui-grid -->
+                <div ui-grid="gridOptions" class="grid" ui-grid-auto-resize></div>
+            <br/>
+            <a href="/gridformat.html">Page 2</a>
+            </div>
+        </div>
+    </body>
+</html>

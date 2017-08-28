@@ -1,0 +1,33 @@
+<!--
+Author: Himanshi Trivedi
+App:Xfinity Mobile Code Challenge.
+Page:Page2/gridformat.html
+-->
+
+<DOCTYPE html>
+<html>
+    <head>  
+         <!-- Adding required javascript and css files to the project -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css">  
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+        <script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"> </script>
+        <script src ="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"> </script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script> 
+        <script src="gridFormat.js"> </script>
+    </head>
+    <body>
+        <div ng-app="gridView" class="griddiv">
+            <div ng-controller="gridFormatCtrl">
+            <br/>
+            <!-- Adding ui-grid -->
+                <div ui-grid="gridOptions1" class="grid" ui-grid-auto-resize></div>
+                
+            </div>
+        </div>
+    </body>
+</html>
