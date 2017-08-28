@@ -1,6 +1,11 @@
-.grid {
-  width: 500px;
-  height: 400px;
+.grid1 {
+  width: 450px;
+  height: 340px;
+}
+
+.grid2 {
+  width: 450px;
+  height: 190px;
 }
 
 .ui-grid-header{

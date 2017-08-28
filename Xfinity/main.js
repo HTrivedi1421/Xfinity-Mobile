@@ -10,7 +10,8 @@ app.controller('mainCtrl', ['$scope','$http', function ($scope, $http) {
         rowHeight: 30,
         headerHeight: 30,
         enableColumnMenus:false,
-        enableScrollbars:false     
+        enableScrollbars:false,
+        enableVerticalScrollbar:0    
     };
       //used $http service to get json data from data.json and display on grid
     $http.get('http://localhost:8080/data.json')

@@ -5,7 +5,8 @@ app.controller('gridFormatCtrl', ['$scope','$http', function ($scope, $http) {
         rowHeight: 30,
         headerHeight: 30, 
         enableColumnMenus:false,
-        enableScrollbars:false          
+        enableScrollbars:false,
+        enableVerticalScrollbar:0          
     };
     
    $http.get('http://localhost:8080/data.json')
